@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: "quicksand", sans-serif;
+    background: linear-gradient(180deg, #f4ccfb, #f6fbcc);
+    color: #421234;
+    font-size: 1.1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@keyframes float1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-1px); }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+h1 {
+    color: #581845;
+    font-size: 3rem;
+    animation: float1 3s ease-in-out infinite;
+}
+
+h2 {
+    color: #8e2e5e;
+    font-size: 2rem;
+    animation: float1 3s ease-in-out infinite;
+}
+
+h3 {
+    color: #9c4872;
+    font-size: 1.5rem;
+    animation: float1 3s ease-in-out infinite;
+}
+
+h4 {
+    color: #aa6286;
+    font-size: 1.0rem;
+}
+
+h5 {
+    color: #bf89a4;
+    font-size: 0.8rem;
+}
+
+img {
+     width: 300px;
+    margin-top: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #320e27;
+    animation: float2 0.65s ease-in-out infinite;
+}    
+
+ol {
+    text-align: left; 
+    max-width: 600px;
+}
+
+a {
+    display: inline-block;
+    margin: 10px; 
+    animation: float2 1.5s ease-in-out infinite;
+}
+
+.button_Juni {
+    background-color: #ab5ce7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 0.75s;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px #402257;
+}
+.button_Juni:hover {
+    background-color: #c085ed;
+    transform: scale(1.05);
+}
+.button_Juni:active {
+    transform: scale(0.98);
+}
+
+.button_Ray {
+    background-color: #e7e05c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 0.75s;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px #575422;
+}
+.button_Ray:hover {
+    background-color: #ede885;
+    transform: scale(1.05);
+}
+.button_Ray:active {
+    transform: scale(0.98);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #dea6e2;
+    color: #6a2d5b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
